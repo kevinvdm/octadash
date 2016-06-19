@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>OCTA DASH</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+
+        <!-- Content -->
+        <div class="top-content">
+
+            <div class="inner-bg">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <img src="img/octaconnectlogo.png" width="30%" style="margin-left:22px;">
+                            <div class="description">
+                            </div>
+                            <div class="top-big-link">
+                            	<a class="btn btn-link-1 launch-modal" href="#" data-modal-id="modal-login">Sign In</a>
+                            </div>
+                        </div>
+                    </div>
+
+<!--
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 social-login">
+                        	<h3 style="color:#A0A1A2;">...or login with:</h3>
+                        	<div class="social-login-buttons">
+	                        	<a class="btn btn-link-2" href="#">
+	                        		<i class="fa fa-facebook"></i> Facebook
+	                        	</a>
+	                        	<a class="btn btn-link-2" href="#">
+	                        		<i class="fa fa-twitter"></i> Twitter
+	                        	</a>
+	                        	<a class="btn btn-link-2" href="#">
+	                        		<i class="fa fa-google-plus"></i> Google Plus
+	                        	</a>
+                        	</div>
+                        </div>
+                    </div>
+-->
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="modal-login-label" aria-hidden="true">
+        	<div class="modal-dialog">
+        		<div class="modal-content">
+        			<div class="modal-header">
+        				<button type="button" class="close" data-dismiss="modal">
+        					<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+        				</button>
+        				<h3 class="modal-title" id="modal-login-label">Sign up to OCTA-Connect</h3>
+        				<p>Enter your credentials:</p>
+        			</div>
+        			<div class="modal-body">
+                        <form role="form" action="/login" method="post" class="login-form">
+                            <div class="form-group">
+	                    		<label class="sr-only" for="username">Username</label>
+	                        	<input type="text" name="username" placeholder="Username..." class="form-username form-control" id="username">
+	                        </div>
+                            <div class="form-group">
+	                        	<label class="sr-only" for="password">Password</label>
+	                        	<input type="password" name="password" placeholder="Password..." class="form-password form-control" id="password">
+	                        </div>
+	                        <button type="submit" class="btn">Sign in!</button>
+	                   </form>
+                        <hr>
+                        <p>Or sign up:</p>
+                        <form role="form" action="/signup" method="post" class="signup-form">
+	                    	<div class="form-group">
+	                    		<label class="sr-only" for="firstName">Full name</label>
+	                        	<input type="text" name="firstName" placeholder="Full name..." class="form-username form-control" id="firstName">
+	                        </div>
+                            <div class="form-group">
+	                        	<label class="sr-only" for="email">E-mail</label>
+	                        	<input type="text" name="email" placeholder="E-mail..." class="form-email form-control" id="email">
+	                        </div>
+                            <div class="form-group">
+	                    		<label class="sr-only" for="username">Username</label>
+	                        	<input type="text" name="username" placeholder="Username..." class="form-username form-control" id="username">
+	                        </div>
+                            <div class="form-group">
+	                        	<label class="sr-only" for="password">Password</label>
+	                        	<input type="password" name="password" placeholder="Password..." class="form-password form-control" id="password">
+	                        </div>
+                            <div class="form-group">
+	                        	<label class="sr-only" for="deviceid">OCTA ID</label>
+	                        	<input type="text" name="deviceid" placeholder="OCTA ID..." class="form-deviceid form-control" id="deviceid">
+	                        </div>
+	                        <button type="submit" class="btn">Sign up!</button>
+                        </form>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+</html>
